@@ -1,0 +1,38 @@
+.footer
+	// .footer__text
+	&__text
+		color: #4d4d4d
+		font-size: 15px
+		line-height: 25px
+		a
+			text-decoration: underline
+			&:hover
+				color: #4d4d4d
+			&:visited
+				color: #4d4d4d
+		text-align: center
+
+
+	// .footer__img
+	&__img
+
+
+.footer-body
+	@include flexbox()
+	justify-content: space-between
+	align-items: center
+	padding: 35px 0px
+	@media (max-width:$md2+px)
+		flex-direction: column
+	// .footer-body__column
+	&__column
+		@media (max-width:$md1+px)
+		padding: 0px 20px
+		@media (max-width:$md2+px)
+			&:first-child
+				order: 2
+			&:last-child
+				order: 1
+				padding: 0px 0px 10px 0px
+
+.footer-row

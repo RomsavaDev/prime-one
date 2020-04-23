@@ -1,0 +1,111 @@
+.hello
+
+.hello-top
+	padding: 80px 0px 0px 0px
+	@media (max-width:$md2+px)
+		padding: 40px 0px 0px 0px
+	// .hello-top__body
+	&__body
+
+	// .hello-top__title
+	&__title
+		// Style for "Say hello"
+		color: #000000
+		font-family: 'AkzidenzGrotesk-BoldCond'
+		font-size: 50px
+		line-height: 25px
+		text-transform: uppercase
+		letter-spacing: 5px
+		margin: 0px 0px 35px 0px
+
+.hello-top-contacts
+	// .hello-top-contacts__column
+	@include flexbox()
+	flex-wrap: wrap
+
+	&__column
+		flex: 0 0 50%
+		@media (max-width:$md2+px)
+			flex: 1 1 100%
+		@include flexbox()
+		align-items: center
+		padding: 0px 0px 25px 0px
+
+	// .hello-top-contacts__icon
+	&__icon
+		padding: 0px 10px 0px 0px
+
+	// .hello-top-contacts__text
+	&__text
+		color: #000000
+		font-size: 15px
+		line-height: 25px
+
+.hello-bottom
+	@include flexbox()
+	@media (max-width:$md2+px)
+		display: block
+	// .hello-bottom__column
+	&__column
+		flex: 0 0 50%
+	// .hello-bottom__map
+	&__map
+		height: 100%
+		@media (max-width:$md2+px)
+			height: 300px
+	// .hello-bottom__items
+	&__items
+		padding: 55px 0px 55px 60px
+		@media (max-width:$md2+px)
+			padding: 30px
+		background-color: #000
+
+	// .hello-bottom__item
+	&__item
+
+	// .hello-bottom__title
+	&__title
+		color: #ffffff
+		font-family: 'AkzidenzGrotesk-BoldCond'
+		font-size: 25px
+		line-height: 25px
+		text-transform: uppercase
+		letter-spacing: 2.5px
+		padding: 0px 0px 30px 0px
+
+	// .hello-bottom__form
+	&__form
+
+	// .hello-bottom__btn
+	&__btn
+
+.btn
+
+
+.contacts-social
+	// .contacts-social__item
+	&__item
+		margin: 0px 30px 0px 0px
+
+	// .contacts-social__item--1
+	&__item--1
+
+	// .contacts-social__item--2
+	&__item--2
+
+	// .contacts-social__item--3
+	&__item--3
+
+	// .contacts-social__item--4
+	&__item--4
+
+.hello-form-body
+	max-width: 375px
+	@media (max-width:$md2+px)
+		max-width: none
+
+.hello-form-line
+	margin: 0px 0px 25px 0px
+
+.input
+

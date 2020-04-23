@@ -1,0 +1,60 @@
+.private
+	@include flexbox()
+	margin: 0px 0px 40px 0px
+	// .private__column
+	&__column
+		flex: 0 0 50%
+		background-color: #000
+		@media (max-width:$md2+px)
+			flex: 1 1 auto
+			&:first-child
+				display: none
+	// .private__image
+	&__image
+		height: 100%
+
+.private-body
+	padding: 75px 20px 75px 60px
+	@media (max-width:$md1+px)
+		padding: 30px 20px 30px 30px
+
+	// .private-body__title
+	&-content
+		max-width: 305px
+	&__title
+		color: #ffffff
+		font-family: "AkzidenzGrotesk-BoldCond"
+		font-size: 50px
+		line-height: 50px
+		text-transform: uppercase
+		letter-spacing: 5px
+		margin: 0px 0px 30px 0px
+		@media (max-width:$md1+px)
+			font-size: 35px
+			margin: 0px 0px 20px 0px
+	// .private-body__text
+	&__text
+		color: #ffffff
+		font-size: 15px
+		line-height: 25px
+		margin: 0px 0px 50px 0px
+		@media (max-width:$md1+px)
+			margin: 0px 0px 30px 0px
+
+.private-body-buttons
+	// .private-body-buttons__item
+	&__item
+		
+
+	// .private-body-buttons__link
+	&__link
+		color: #fffffe
+		font-family: Bebas
+		font-size: 15px
+		line-height: 25px
+		text-decoration: underline
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		margin: 0px 0px 0px 15px
+
+
